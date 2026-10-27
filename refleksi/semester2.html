@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Refleksi Semester 2 - Florentiano Hirvi Rasanto">
+    <title>Refleksi Semester 2 | Florentiano Hirvi Rasanto</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231B4332' rx='8'/%3E%3Ctext x='50' y='65' font-family='Fraunces, serif' font-size='38' font-weight='700' fill='%23F8F5F0' text-anchor='middle'%3EFHR%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="../beranda/index.html" class="nav__logo" aria-label="Beranda">
+                <span class="nav__logo-initials">FHR</span>
+                <span class="nav__logo-text">Florentiano Hirvi Rasanto</span>
+            </a>
+            
+            <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu navigasi">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+            
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item">
+                    <a href="../beranda/index.html" class="nav__link">Beranda</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../profil/index.html" class="nav__link">Profil</a>
+                </li>
+                <li class="nav__item nav__item--dropdown">
+                    <button class="nav__link nav__link--dropdown nav__link--active" id="refleksiDropdownBtn" aria-expanded="false" aria-haspopup="true">
+                        Refleksi
+                        <svg class="nav__dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <ul class="nav__dropdown" id="refleksiDropdown" aria-labelledby="refleksiDropdownBtn">
+                        <li class="nav__dropdown-item">
+                            <a href="../refleksi/semester1.html" class="nav__dropdown-link">Refleksi Semester 1</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../refleksi/semester2.html" class="nav__dropdown-link">Refleksi Semester 2</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../refleksi/ppg.html" class="nav__dropdown-link">Refleksi PPG</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="../learning-journey/index.html" class="nav__link">Learning Journey</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../karya-inovasi/index.html" class="nav__link">Karya Inovasi</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu__close" id="mobileMenuClose" aria-label="Tutup menu navigasi">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a href="../beranda/index.html" class="mobile-menu__link">Beranda</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="../profil/index.html" class="mobile-menu__link">Profil</a>
+            </li>
+            <li class="mobile-menu__item mobile-menu__item--accordion">
+                <button class="mobile-menu__accordion-btn" id="mobileRefleksiBtn" aria-expanded="false">
+                    Refleksi
+                    <svg class="mobile-menu__accordion-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__submenu" id="mobileRefleksiSubmenu">
+                    <li class="mobile-menu__submenu-item">
+                        <a href="../refleksi/semester1.html" class="mobile-menu__submenu-link">Refleksi Semester 1</a>
+                    </li>
+                    <li class="mobile-menu__submenu-item">
+                        <a href="../refleksi/semester2.html" class="mobile-menu__submenu-link">Refleksi Semester 2</a>
+                    </li>
+                    <li class="mobile-menu__submenu-item">
+                        <a href="../refleksi/ppg.html" class="mobile-menu__submenu-link">Refleksi PPG</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="../learning-journey/index.html" class="mobile-menu__link">Learning Journey</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="../karya-inovasi/index.html" class="mobile-menu__link">Karya Inovasi</a>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="refleksi section">
+            <div class="container">
+                <header class="section__header">
+                    <p class="section__label">Refleksi</p>
+                    <h2 class="section__title">Refleksi Semester 2</h2>
+                    <p class="section__description">Belajar merancang pembelajaran praktik kuliner yang berpusat pada peserta didik.</p>
+                </header>
+                
+                <article class="refleksi__article">
+                    <header class="refleksi__article-header">
+                        <span class="refleksi__article-label">Refleksi Semester 2</span>
+                        <h3 class="refleksi__article-title">Merancang Pembelajaran Praktik yang Bermakna</h3>
+                        <time class="refleksi__article-date" datetime="2026-11-10">10 November 2026</time>
+                    </header>
+                    <div class="refleksi__article-content">
+                        <p>
+                            Semester dua membawa saya pada pengalaman yang lebih aplikatif melalui mata kuliah Perancangan dan Pengembangan Pembelajaran. Di sinilah pengalaman industri kuliner selama bertahun-tahun mulai saya konversi menjadi pembelajaran yang terstruktur, sistematis, dan bermakna bagi peserta didik SMK.
+                        </p>
+                        <blockquote class="refleksi__quote">
+                            "Pembelajaran praktik bermakna terjadi ketika siswa tidak hanya meniru resep, tetapi memahami alasan setiap proses, teknik, dan prinsip pengolahan."
+                        </blockquote>
+                        <p>
+                            Belajar merancang Modul Ajar untuk mata pelajaran produktif Tata Boga mengajarkan saya pentingnya keselarasan antara Capaian Pembelajaran, Tujuan Pembelajaran, Alur Tujuan Pembelajaran, kegiatan praktik, dan asesmen. Setiap langkah harus dirancang dengan mempertimbangkan waktu praktik, ketersediaan alat-bahan, keselamatan kerja, serta kemampuan siswa.
+                        </p>
+                        
+                        <h4 class="refleksi__subheading">Yang Saya Pelajari</h4>
+                        <ul class="refleksi__list">
+                            <li>Merancang Modul Ajar berbasis Kurikulum Merdeka untuk pembelajaran praktik kuliner.</li>
+                            <li>Mengintegrasikan aspek K3 (Keselamatan dan Kesehatan Kerja) dalam setiap kegiatan praktik.</li>
+                            <li>Menerapkan pembelajaran berbasis proyek untuk menghasilkan produk kuliner kontekstual.</li>
+                            <li>Mendesain asesmen keterampilan praktik yang objektif, adil, dan holistik.</li>
+                        </ul>
+                        
+                        <h4 class="refleksi__subheading">Tantangan</h4>
+                        <ul class="refleksi__list">
+                            <li>Menyesuaikan materi dari pengalaman industri menjadi skenario pembelajaran yang sesuai jenjang SMK.</li>
+                            <li>Merancang alokasi waktu praktik yang realistis dengan tetap memastikan pencapaian tujuan pembelajaran.</li>
+                            <li>Belajar menerima revisi Modul Ajar sebagai proses penyempurnaan untuk kualitas pembelajaran yang lebih baik.</li>
+                        </ul>
+                        
+                        <h4 class="refleksi__subheading">Rencana Perbaikan</h4>
+                        <ul class="refleksi__list">
+                            <li>Lebih banyak mempelajari contoh Modul Ajar produktif Tata Boga yang berkualitas.</li>
+                            <li>Mengintegrasikan resep tradisional NTT ke dalam pembelajaran untuk menumbuhkan kecintaan pada kuliner lokal.</li>
+                            <li>Meningkatkan kemampuan dalam merancang lembar kerja praktik yang jelas dan operasional.</li>
+                            <li>Berlatih mengelola kelas praktik dengan efektif, aman, dan tertib.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <span class="footer__logo-initials">FHR</span>
+                        <span class="footer__logo-text">Florentiano Hirvi Rasanto</span>
+                    </div>
+                    <p class="footer__description">
+                        Portofolio mahasiswa PPG Calon Guru 2026 - Bidang Studi Kuliner, Universitas Negeri Makassar.
+                    </p>
+                </div>
+                <div class="footer__nav">
+                    <h4 class="footer__nav-title">Navigasi</h4>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="../beranda/index.html" class="footer__nav-link">Beranda</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="../profil/index.html" class="footer__nav-link">Profil</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="../learning-journey/index.html" class="footer__nav-link">Learning Journey</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="../karya-inovasi/index.html" class="footer__nav-link">Karya Inovasi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__refleksi">
+                    <h4 class="footer__nav-title">Refleksi</h4>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="../refleksi/semester1.html" class="footer__nav-link">Refleksi Semester 1</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="../refleksi/semester2.html" class="footer__nav-link">Refleksi Semester 2</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="../refleksi/ppg.html" class="footer__nav-link">Refleksi PPG</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; <span id="currentYear"></span> Florentiano Hirvi Rasanto. Semua hak dilindungi.
+                </p>
+                <p class="footer__credit">Dibangun dengan ketelitian untuk perjalanan menjadi guru profesional.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M10 15V5M10 5L5 10M10 5L15 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
