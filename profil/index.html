@@ -10,16 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css?v=19">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231B4332' rx='8'/%3E%3Ctext x='50' y='65' font-family='Fraunces, serif' font-size='38' font-weight='700' fill='%23F8F5F0' text-anchor='middle'%3EFHR%3C/text%3E%3C/svg%3E">
 </head>
 <body>
     <header class="header">
         <nav class="nav container">
-            <a href="../beranda/index.html" class="nav__logo" aria-label="Beranda">
-                <span class="nav__logo-initials">FHR</span>
-                <span class="nav__logo-text">Florentiano Hirvi Rasanto</span>
-            </a>
+            <div class="nav__left">
+                <div class="nav__logos">
+                    <img src="../beranda/Logo/1001106065-removebg-preview.png" alt="Logo 1" class="nav__logo-img">
+                    <img src="../beranda/Logo/2d526868-5b52-4b5e-b3c3-be5d841ffc1e_removalai_preview.png" alt="Logo 2" class="nav__logo-img">
+                    <img src="../beranda/Logo/b7ec5d6e-4a33-47c1-ad4f-7ef8073f08b0_removalai_preview.png" alt="Logo 3" class="nav__logo-img">
+                    <img src="../beranda/Logo/Logo-Tersier-Diktisaintek-Berdampak-1-768x768.png" alt="Logo Tersier Diktisaintek Berdampak" class="nav__logo-img">
+                </div>
+                <a href="../beranda/index.html" class="nav__logo" aria-label="Beranda">
+                    <img src="../assets/images/foto-profil.jpeg" alt="Foto profil Florentiano Hirvi Rasanto" class="nav__logo-initials">
+                    <span class="nav__logo-text">Florentiano Hirvi Rasanto</span>
+                </a>
+            </div>
             
             <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu navigasi">
                 <span class="nav__toggle-bar"></span>
@@ -34,6 +42,9 @@
                 <li class="nav__item">
                     <a href="../profil/index.html" class="nav__link nav__link--active">Profil</a>
                 </li>
+                                <li class="nav__item">
+                    <a href="../visi-misi/index.html" class="nav__link">Visi dan Misi</a>
+                </li>
                 <li class="nav__item nav__item--dropdown">
                     <button class="nav__link nav__link--dropdown" id="refleksiDropdownBtn" aria-expanded="false" aria-haspopup="true">
                         Refleksi
@@ -47,9 +58,6 @@
                         </li>
                         <li class="nav__dropdown-item">
                             <a href="../refleksi/semester2.html" class="nav__dropdown-link">Refleksi Semester 2</a>
-                        </li>
-                        <li class="nav__dropdown-item">
-                            <a href="../refleksi/ppg.html" class="nav__dropdown-link">Refleksi PPG</a>
                         </li>
                     </ul>
                 </li>
@@ -76,6 +84,9 @@
             <li class="mobile-menu__item">
                 <a href="../profil/index.html" class="mobile-menu__link">Profil</a>
             </li>
+                        <li class="mobile-menu__item">
+                <a href="../visi-misi/index.html" class="mobile-menu__link">Visi dan Misi</a>
+            </li>
             <li class="mobile-menu__item mobile-menu__item--accordion">
                 <button class="mobile-menu__accordion-btn" id="mobileRefleksiBtn" aria-expanded="false">
                     Refleksi
@@ -89,9 +100,6 @@
                     </li>
                     <li class="mobile-menu__submenu-item">
                         <a href="../refleksi/semester2.html" class="mobile-menu__submenu-link">Refleksi Semester 2</a>
-                    </li>
-                    <li class="mobile-menu__submenu-item">
-                        <a href="../refleksi/ppg.html" class="mobile-menu__submenu-link">Refleksi PPG</a>
                     </li>
                 </ul>
             </li>
@@ -115,10 +123,10 @@
                 <div class="profil__grid">
                     <div class="profil__bio">
                         <p>
-                            Saya adalah mahasiswa PPG Prajabatan Program Studi Pendidikan Kuliner Universitas Negeri Makassar angkatan 2026 yang berkomitmen untuk menjadi guru yang tidak hanya menguasai keahlian boga, tetapi juga mampu menciptakan ruang belajar yang aman, inklusif, dan bermakna bagi setiap peserta didik.
+                            Saya Florentiano Hirvi Rasanto adalah mahasiswa PPG Calon Guru gelombang 1 tahun 2026 Bidang Studi Kuliner yang berkomitmen untuk menjadi guru yang tidak hanya menguasai keahlian pada bidang tata boga, tetapi juga mampu menciptakan ruang belajar yang aman, inklusif, dan bermakna bagi setiap peserta didik.
                         </p>
                         <p>
-                            Berlandaskan pengalaman pendidikan di bidang Tata Boga, saya terus mengasah kemampuan merancang pembelajaran praktik kuliner yang berbasis kompetensi, mengembangkan media inovatif, serta membangun relasi pedagogis yang menghargai keberagaman. Keyakinan saya adalah bahwa setiap peserta didik memiliki potensi yang layak dikembangkan dengan pendekatan yang humanis dan aplikatif.
+                            Berlandaskan pengalaman pendidikan di bidang tata boga, saya terus mengasah kemampuan merancang pembelajaran praktik yang berbasis kompetensi, mengembangkan media inovatif, serta membangun relasi pedagogis yang menghargai keberagaman. Keyakinan saya adalah bahwa setiap peserta didik memiliki potensi yang layak dikembangkan dengan pendekatan yang humanis dan aplikatif.
                         </p>
                     </div>
                     
@@ -175,36 +183,7 @@
                     </div>
                 </div>
 
-                <div class="profil__visi-misi">
-                    <h3 class="profil__subtitle">Visi dan Misi</h3>
-                    <div class="visi-misi__grid">
-                        <article class="visi-misi__card">
-                            <h4 class="visi-misi__title">Visi</h4>
-                            <p class="visi-misi__text">
-                                Visi pribadi saya untuk pendidikan di Indonesia adalah mewujudkan pendidikan yang bermutu dan inklusif untuk setiap anak. Sebagai seorang calon guru, saya bervisi menjadi individu/pendidik unggul yang dapat membentuk anak-anak cerdas, kreatif, dan berkarakter.
-                            </p>
-                        </article>
-                        <article class="visi-misi__card">
-                            <h4 class="visi-misi__title">Misi</h4>
-                            <ol class="visi-misi__list" style="list-style: decimal; padding-left: 1.5rem;">
-                                <li>Mengikuti program Pendidikan Profesi Guru (PPG) agar memperoleh sertifikat pendidik sebagai bentuk pengakuan bahwa saya kompeten menjadi guru dan menyandang gelar "Guru Profesional".</li>
-                                <li>Meningkatkan kompetensi pedagogik, profesional, kepribadian, dan sosial.</li>
-                                <li>Mengembangkan potensi secara holistik dengan cara mengasah aspek kognitif, motorik, sosial-emosional, dan spiritual.</li>
-                                <li>Menanamkan nilai-nilai karakter dengan mengedepankan sikap sopan santun, toleransi, dan bertanggung jawab.</li>
-                                <li>Menjadi pembelajar sepanjang hayat.</li>
-                            </ol>
-                        </article>
-                    </div>
-                </div>
 
-                <div class="profil__actions" style="margin-top: clamp(2.5rem, 6vw, 4rem); text-align: left;">
-                    <a href="../assets/documents/Hasil Identifikasi Diri (LK 1).pdf" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M9 1.5V11.25M9 11.25L5.25 7.5M9 11.25L12.75 7.5M3.75 11.25V14.25C3.75 14.6478 3.90804 15.0294 4.18934 15.3107C4.47064 15.592 4.85218 15.75 5.25 15.75H12.75C13.1478 15.75 13.5294 15.592 13.8107 15.3107C14.092 15.0294 14.25 14.6478 14.25 14.25V11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        Lihat File Hasil Identifikasi Diri (LK 1)
-                    </a>
-                </div>
             </div>
         </section>
     </main>
@@ -214,43 +193,12 @@
             <div class="footer__main">
                 <div class="footer__brand">
                     <div class="footer__logo">
-                        <span class="footer__logo-initials">FHR</span>
+                        <img src="../assets/images/foto-profil.jpeg" alt="Foto profil Florentiano Hirvi Rasanto" class="footer__logo-initials">
                         <span class="footer__logo-text">Florentiano Hirvi Rasanto</span>
                     </div>
                     <p class="footer__description">
                         Portofolio mahasiswa PPG Calon Guru 2026 - Bidang Studi Kuliner, Universitas Negeri Makassar.
                     </p>
-                </div>
-                <div class="footer__nav">
-                    <h4 class="footer__nav-title">Navigasi</h4>
-                    <ul class="footer__nav-list">
-                        <li class="footer__nav-item">
-                            <a href="../beranda/index.html" class="footer__nav-link">Beranda</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="../profil/index.html" class="footer__nav-link">Profil</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="../learning-journey/index.html" class="footer__nav-link">Learning Journey</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="../karya-inovasi/index.html" class="footer__nav-link">Karya Inovasi</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__refleksi">
-                    <h4 class="footer__nav-title">Refleksi</h4>
-                    <ul class="footer__nav-list">
-                        <li class="footer__nav-item">
-                            <a href="../refleksi/semester1.html" class="footer__nav-link">Refleksi Semester 1</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="../refleksi/semester2.html" class="footer__nav-link">Refleksi Semester 2</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="../refleksi/ppg.html" class="footer__nav-link">Refleksi PPG</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
             <div class="footer__bottom">
