@@ -10,16 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=19">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231B4332' rx='8'/%3E%3Ctext x='50' y='65' font-family='Fraunces, serif' font-size='38' font-weight='700' fill='%23F8F5F0' text-anchor='middle'%3EFHR%3C/text%3E%3C/svg%3E">
 </head>
 <body class="page-home">
     <header class="header">
         <nav class="nav container">
-            <a href="beranda/index.html" class="nav__logo" aria-label="Beranda">
-                <span class="nav__logo-initials">FHR</span>
-                <span class="nav__logo-text">Florentiano Hirvi Rasanto</span>
-            </a>
+            <div class="nav__left">
+                <div class="nav__logos">
+                    <img src="beranda/Logo/1001106065-removebg-preview.png" alt="Logo 1" class="nav__logo-img">
+                    <img src="beranda/Logo/2d526868-5b52-4b5e-b3c3-be5d841ffc1e_removalai_preview.png" alt="Logo 2" class="nav__logo-img">
+                    <img src="beranda/Logo/b7ec5d6e-4a33-47c1-ad4f-7ef8073f08b0_removalai_preview.png" alt="Logo 3" class="nav__logo-img">
+                    <img src="beranda/Logo/Logo-Tersier-Diktisaintek-Berdampak-1-768x768.png" alt="Logo Tersier Diktisaintek Berdampak" class="nav__logo-img">
+                </div>
+                <a href="beranda/index.html" class="nav__logo" aria-label="Beranda">
+                    <img src="assets/images/foto-profil.jpeg" alt="Foto profil Florentiano Hirvi Rasanto" class="nav__logo-initials">
+                    <span class="nav__logo-text">Florentiano Hirvi Rasanto</span>
+                </a>
+            </div>
             
             <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu navigasi">
                 <span class="nav__toggle-bar"></span>
@@ -34,6 +42,9 @@
                 <li class="nav__item">
                     <a href="profil/index.html" class="nav__link">Profil</a>
                 </li>
+                                <li class="nav__item">
+                    <a href="visi-misi/index.html" class="nav__link">Visi dan Misi</a>
+                </li>
                 <li class="nav__item nav__item--dropdown">
                     <button class="nav__link nav__link--dropdown" id="refleksiDropdownBtn" aria-expanded="false" aria-haspopup="true">
                         Refleksi
@@ -47,9 +58,6 @@
                         </li>
                         <li class="nav__dropdown-item">
                             <a href="refleksi/semester2.html" class="nav__dropdown-link">Refleksi Semester 2</a>
-                        </li>
-                        <li class="nav__dropdown-item">
-                            <a href="refleksi/ppg.html" class="nav__dropdown-link">Refleksi PPG</a>
                         </li>
                     </ul>
                 </li>
@@ -76,6 +84,9 @@
             <li class="mobile-menu__item">
                 <a href="profil/index.html" class="mobile-menu__link">Profil</a>
             </li>
+                        <li class="mobile-menu__item">
+                <a href="visi-misi/index.html" class="mobile-menu__link">Visi dan Misi</a>
+            </li>
             <li class="mobile-menu__item mobile-menu__item--accordion">
                 <button class="mobile-menu__accordion-btn" id="mobileRefleksiBtn" aria-expanded="false">
                     Refleksi
@@ -89,9 +100,6 @@
                     </li>
                     <li class="mobile-menu__submenu-item">
                         <a href="refleksi/semester2.html" class="mobile-menu__submenu-link">Refleksi Semester 2</a>
-                    </li>
-                    <li class="mobile-menu__submenu-item">
-                        <a href="refleksi/ppg.html" class="mobile-menu__submenu-link">Refleksi PPG</a>
                     </li>
                 </ul>
             </li>
@@ -114,8 +122,7 @@
                         Perjalanan untuk menjadi pendidik yang reflektif, inovatif, dan berdedikasi dalam menumbuhkan potensi peserta didik melalui pembelajaran yang kontekstual dan bermakna.
                     </p>
                     <div class="hero__actions">
-                        <a href="karya-inovasi/index.html" class="btn btn--primary">Lihat Portofolio</a>
-                        <a href="profil/index.html" class="btn btn--secondary">Kenali Saya</a>
+
                     </div>
                     <div class="hero__metadata">
                         <div class="hero__meta-item">
@@ -138,7 +145,7 @@
                 </div>
                 <div class="hero__image-wrapper">
                     <div class="hero__image-frame">
-                        <img src="assets/images/foto-profil.jpg" alt="Foto Florentiano Hirvi Rasanto" class="hero__image" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop'">
+                        <img src="assets/images/foto-profil.jpeg" alt="Foto Florentiano Hirvi Rasanto" class="hero__image" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop'">
                     </div>
                 </div>
             </div>
@@ -150,7 +157,7 @@
             <div class="footer__main">
                 <div class="footer__brand">
                     <div class="footer__logo">
-                        <span class="footer__logo-initials">FHR</span>
+                        <img src="assets/images/foto-profil.jpeg" alt="Foto profil Florentiano Hirvi Rasanto" class="footer__logo-initials">
                         <span class="footer__logo-text">Florentiano Hirvi Rasanto</span>
                     </div>
                     <p class="footer__description">
