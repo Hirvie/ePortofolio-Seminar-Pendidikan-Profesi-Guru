@@ -157,5 +157,75 @@
             document.body.style.overflow = '';
         }
     });
-    
+
+    // PDF Modal Viewer
+    const pdfLinks = document.querySelectorAll('a[href$=".pdf"], a[href*=".pdf?"]');
+    if (pdfLinks.length) {
+        const modal = document.createElement('div');
+        modal.className = 'pdf-modal';
+        modal.id = 'pdfModal';
+        modal.setAttribute('aria-hidden', 'true');
+        modal.innerHTML = `
+            <div class="pdf-modal__backdrop" data-pdf-close="true"></div>
+            <div class="pdf-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="pdfModalTitle">
+                <div class="pdf-modal__header">
+                    <h3 class="pdf-modal__title" id="pdfModalTitle">Dokumen PDF</h3>
+                    <div class="pdf-modal__actions">
+                        <a class="pdf-modal__btn" id="pdfModalOpenNew" href="#" target="_blank" rel="noopener noreferrer" aria-label="Buka di tab baru" title="Buka di tab baru">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 3h7v7M10 14L21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                        <button class="pdf-modal__btn" type="button" id="pdfModalClose" aria-label="Tutup" title="Tutup">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="pdf-modal__body">
+                    <iframe class="pdf-modal__frame" id="pdfModalFrame" title="Pratinjau dokumen PDF"></iframe>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        const frame = modal.querySelector('#pdfModalFrame');
+        const title = modal.querySelector('#pdfModalTitle');
+        const openNew = modal.querySelector('#pdfModalOpenNew');
+        const closeBtn = modal.querySelector('#pdfModalClose');
+        let lastFocus = null;
+
+        const closeModal = () => {
+            modal.classList.remove('is-open');
+            modal.setAttribute('aria-hidden', 'true');
+            frame.src = '';
+            document.body.style.overflow = '';
+            if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+        };
+
+        const openModal = (href, label) => {
+            lastFocus = document.activeElement;
+            title.textContent = label || 'Dokumen PDF';
+            openNew.href = href;
+            frame.src = href;
+            modal.classList.add('is-open');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => closeBtn.focus(), 50);
+        };
+
+        pdfLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+                e.preventDefault();
+                const label = (link.textContent || '').trim().replace(/\s+/g, ' ') || 'Dokumen PDF';
+                openModal(link.getAttribute('href'), label);
+            });
+        });
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target && e.target.getAttribute('data-pdf-close') === 'true') closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+        });
+    }
 })();
