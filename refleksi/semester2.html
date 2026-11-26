@@ -10,16 +10,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css?v=19">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231B4332' rx='8'/%3E%3Ctext x='50' y='65' font-family='Fraunces, serif' font-size='38' font-weight='700' fill='%23F8F5F0' text-anchor='middle'%3EFHR%3C/text%3E%3C/svg%3E">
+    <style>
+        @media (max-width: 968px) {
+            .refleksi__layout { grid-template-columns: 1fr !important; }
+        }
+    </style>
 </head>
 <body>
     <header class="header">
         <nav class="nav container">
-            <a href="../beranda/index.html" class="nav__logo" aria-label="Beranda">
-                <span class="nav__logo-initials">FHR</span>
-                <span class="nav__logo-text">Florentiano Hirvi Rasanto</span>
-            </a>
+            <div class="nav__left">
+                <div class="nav__logos">
+                    <img src="../beranda/Logo/1001106065-removebg-preview.png" alt="Logo 1" class="nav__logo-img">
+                    <img src="../beranda/Logo/2d526868-5b52-4b5e-b3c3-be5d841ffc1e_removalai_preview.png" alt="Logo 2" class="nav__logo-img">
+                    <img src="../beranda/Logo/b7ec5d6e-4a33-47c1-ad4f-7ef8073f08b0_removalai_preview.png" alt="Logo 3" class="nav__logo-img">
+                    <img src="../beranda/Logo/Logo-Tersier-Diktisaintek-Berdampak-1-768x768.png" alt="Logo Tersier Diktisaintek Berdampak" class="nav__logo-img">
+                </div>
+                <a href="../beranda/index.html" class="nav__logo" aria-label="Beranda">
+                    <img src="../assets/images/foto-profil.jpeg" alt="Foto profil Florentiano Hirvi Rasanto" class="nav__logo-initials">
+                    <span class="nav__logo-text">Florentiano Hirvi Rasanto</span>
+                </a>
+            </div>
             
             <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu navigasi">
                 <span class="nav__toggle-bar"></span>
@@ -34,6 +47,9 @@
                 <li class="nav__item">
                     <a href="../profil/index.html" class="nav__link">Profil</a>
                 </li>
+                                <li class="nav__item">
+                    <a href="../visi-misi/index.html" class="nav__link">Visi dan Misi</a>
+                </li>
                 <li class="nav__item nav__item--dropdown">
                     <button class="nav__link nav__link--dropdown nav__link--active" id="refleksiDropdownBtn" aria-expanded="false" aria-haspopup="true">
                         Refleksi
@@ -46,10 +62,7 @@
                             <a href="../refleksi/semester1.html" class="nav__dropdown-link">Refleksi Semester 1</a>
                         </li>
                         <li class="nav__dropdown-item">
-                            <a href="../refleksi/semester2.html" class="nav__dropdown-link">Refleksi Semester 2</a>
-                        </li>
-                        <li class="nav__dropdown-item">
-                            <a href="../refleksi/ppg.html" class="nav__dropdown-link">Refleksi PPG</a>
+                            <a href="../refleksi/semester2.html" class="nav__dropdown-link nav__dropdown-link--active">Refleksi Semester 2</a>
                         </li>
                     </ul>
                 </li>
@@ -76,6 +89,9 @@
             <li class="mobile-menu__item">
                 <a href="../profil/index.html" class="mobile-menu__link">Profil</a>
             </li>
+                        <li class="mobile-menu__item">
+                <a href="../visi-misi/index.html" class="mobile-menu__link">Visi dan Misi</a>
+            </li>
             <li class="mobile-menu__item mobile-menu__item--accordion">
                 <button class="mobile-menu__accordion-btn" id="mobileRefleksiBtn" aria-expanded="false">
                     Refleksi
@@ -88,10 +104,7 @@
                         <a href="../refleksi/semester1.html" class="mobile-menu__submenu-link">Refleksi Semester 1</a>
                     </li>
                     <li class="mobile-menu__submenu-item">
-                        <a href="../refleksi/semester2.html" class="mobile-menu__submenu-link">Refleksi Semester 2</a>
-                    </li>
-                    <li class="mobile-menu__submenu-item">
-                        <a href="../refleksi/ppg.html" class="mobile-menu__submenu-link">Refleksi PPG</a>
+                        <a href="../refleksi/semester2.html" class="mobile-menu__submenu-link mobile-menu__submenu-link--active">Refleksi Semester 2</a>
                     </li>
                 </ul>
             </li>
@@ -108,50 +121,33 @@
         <section class="refleksi section">
             <div class="container">
                 <header class="section__header">
-                    <p class="section__label">Refleksi</p>
-                    <h2 class="section__title">Refleksi Semester 2</h2>
-                    <p class="section__description">Belajar merancang pembelajaran praktik kuliner yang berpusat pada peserta didik.</p>
+                    <h2 class="section__title">Ringkasan Refleksi Semester 2 PPG</h2>
                 </header>
                 
                 <article class="refleksi__article">
-                    <header class="refleksi__article-header">
-                        <span class="refleksi__article-label">Refleksi Semester 2</span>
-                        <h3 class="refleksi__article-title">Merancang Pembelajaran Praktik yang Bermakna</h3>
-                        <time class="refleksi__article-date" datetime="2026-11-10">10 November 2026</time>
-                    </header>
-                    <div class="refleksi__article-content">
-                        <p>
-                            Semester dua membawa saya pada pengalaman yang lebih aplikatif melalui mata kuliah Perancangan dan Pengembangan Pembelajaran. Di sinilah pengalaman industri kuliner selama bertahun-tahun mulai saya konversi menjadi pembelajaran yang terstruktur, sistematis, dan bermakna bagi peserta didik SMK.
-                        </p>
-                        <blockquote class="refleksi__quote">
-                            "Pembelajaran praktik bermakna terjadi ketika siswa tidak hanya meniru resep, tetapi memahami alasan setiap proses, teknik, dan prinsip pengolahan."
-                        </blockquote>
-                        <p>
-                            Belajar merancang Modul Ajar untuk mata pelajaran produktif Tata Boga mengajarkan saya pentingnya keselarasan antara Capaian Pembelajaran, Tujuan Pembelajaran, Alur Tujuan Pembelajaran, kegiatan praktik, dan asesmen. Setiap langkah harus dirancang dengan mempertimbangkan waktu praktik, ketersediaan alat-bahan, keselamatan kerja, serta kemampuan siswa.
-                        </p>
-                        
-                        <h4 class="refleksi__subheading">Yang Saya Pelajari</h4>
-                        <ul class="refleksi__list">
-                            <li>Merancang Modul Ajar berbasis Kurikulum Merdeka untuk pembelajaran praktik kuliner.</li>
-                            <li>Mengintegrasikan aspek K3 (Keselamatan dan Kesehatan Kerja) dalam setiap kegiatan praktik.</li>
-                            <li>Menerapkan pembelajaran berbasis proyek untuk menghasilkan produk kuliner kontekstual.</li>
-                            <li>Mendesain asesmen keterampilan praktik yang objektif, adil, dan holistik.</li>
-                        </ul>
-                        
-                        <h4 class="refleksi__subheading">Tantangan</h4>
-                        <ul class="refleksi__list">
-                            <li>Menyesuaikan materi dari pengalaman industri menjadi skenario pembelajaran yang sesuai jenjang SMK.</li>
-                            <li>Merancang alokasi waktu praktik yang realistis dengan tetap memastikan pencapaian tujuan pembelajaran.</li>
-                            <li>Belajar menerima revisi Modul Ajar sebagai proses penyempurnaan untuk kualitas pembelajaran yang lebih baik.</li>
-                        </ul>
-                        
-                        <h4 class="refleksi__subheading">Rencana Perbaikan</h4>
-                        <ul class="refleksi__list">
-                            <li>Lebih banyak mempelajari contoh Modul Ajar produktif Tata Boga yang berkualitas.</li>
-                            <li>Mengintegrasikan resep tradisional NTT ke dalam pembelajaran untuk menumbuhkan kecintaan pada kuliner lokal.</li>
-                            <li>Meningkatkan kemampuan dalam merancang lembar kerja praktik yang jelas dan operasional.</li>
-                            <li>Berlatih mengelola kelas praktik dengan efektif, aman, dan tertib.</li>
-                        </ul>
+                    <div class="refleksi__layout" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(1.5rem, 4vw, 2.5rem); align-items: start;">
+                        <div class="refleksi__article-content">
+                            <p>
+                                Enam mata kuliah semester ini melengkapi fondasi saya sebagai calon guru dengan sisi emosional, kepemimpinan, dan kemandirian profesional. Pembelajaran Sosial dan Emosional memperkenalkan kerangka CASEL, yaitu kesadaran diri, manajemen diri, kesadaran sosial, pengambilan keputusan yang bertanggung jawab, dan keterampilan sosial, agar pembelajaran berlangsung menyenangkan dan murid mampu mengenal serta mengelola emosinya. Pembelajaran Mendalam dan Asesmen Lanjut menegaskan pentingnya asesmen awal untuk memetakan keberagaman murid, serta membedakan asesmen awal, formatif, dan sumatif sebagai landasan pembelajaran yang inklusif dan mendalam.
+                            </p>
+                            <p>
+                                Projek Kepemimpinan melatih kolaborasi, komunikasi, tanggung jawab, dan manajemen proyek melalui perancangan projek pelatihan barista dasar bersama tim. Edupreneurship menunjukkan bahwa guru dapat berjiwa wirausaha, yaitu inisiatif, peka terhadap peluang, dan mampu menciptakan media atau produk edukatif yang bermanfaat. PPL Mandiri memberi ruang merancang dan melaksanakan pembelajaran sekaligus mengembangkan empat kompetensi guru (pedagogik, profesional, kepribadian, dan sosial), terutama kompetensi sosial lewat kerja sama dengan guru lain. Seminar PPG menguatkan kebiasaan refleksi yang logis dan sistematis untuk menemukan kelebihan, kekurangan, dan arah perbaikan.
+                            </p>
+                            <p>
+                                Sebelumnya, saya meluapkan amarah kepada murid sulit diatur sebagai "shock terapi", langsung mengajar tanpa asesmen awal sehingga ada murid yang tertinggal, memandang praktik hanya sebagai penyampaian materi, dan jarang merefleksikan pengalaman. Ke depan, saya akan menerapkan komponen pembelajaran sosial emosional, menyusun dan melaksanakan asesmen awal, meningkatkan kolaborasi dan inisiatif, mengembangkan ide inovatif di bidang pendidikan, memperkuat kompetensi sosial, serta membiasakan refleksi setelah setiap kegiatan. Dengan bekal ini, saya bertekad menjadi guru yang empatik, inklusif, kolaboratif, inovatif, dan terus belajar melalui refleksi.
+                            </p>
+                        </div>
+                        <figure class="refleksi__infographic" style="margin: 0;">
+                            <img src="Infografis refleksi semester 2.png" alt="Infografis Refleksi Semester 2 PPG" style="width: 100%; height: auto; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-soft);">
+                        </figure>
+                    </div>
+                    <div class="refleksi__actions" style="margin-top: 2rem;">
+                        <a href="../assets/documents/Refleksi Mata Kuliah Semester II LK 2.pdf" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M9 1.5V11.25M9 11.25L5.25 7.5M9 11.25L12.75 7.5M3.75 11.25V14.25C3.75 14.6478 3.90804 15.0294 4.18934 15.3107C4.47064 15.592 4.85218 15.75 5.25 15.75H12.75C13.1478 15.75 13.5294 15.592 13.8107 15.3107C14.092 15.0294 14.25 14.6478 14.25 14.25V11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Lihat File Refleksi Mata Kuliah Semester II LK 2
+                        </a>
                     </div>
                 </article>
             </div>
@@ -163,43 +159,12 @@
             <div class="footer__main">
                 <div class="footer__brand">
                     <div class="footer__logo">
-                        <span class="footer__logo-initials">FHR</span>
+                        <img src="../assets/images/foto-profil.jpeg" alt="Foto profil Florentiano Hirvi Rasanto" class="footer__logo-initials">
                         <span class="footer__logo-text">Florentiano Hirvi Rasanto</span>
                     </div>
                     <p class="footer__description">
                         Portofolio mahasiswa PPG Calon Guru 2026 - Bidang Studi Kuliner, Universitas Negeri Makassar.
                     </p>
-                </div>
-                <div class="footer__nav">
-                    <h4 class="footer__nav-title">Navigasi</h4>
-                    <ul class="footer__nav-list">
-                        <li class="footer__nav-item">
-                            <a href="../beranda/index.html" class="footer__nav-link">Beranda</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="../profil/index.html" class="footer__nav-link">Profil</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="../learning-journey/index.html" class="footer__nav-link">Learning Journey</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="../karya-inovasi/index.html" class="footer__nav-link">Karya Inovasi</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__refleksi">
-                    <h4 class="footer__nav-title">Refleksi</h4>
-                    <ul class="footer__nav-list">
-                        <li class="footer__nav-item">
-                            <a href="../refleksi/semester1.html" class="footer__nav-link">Refleksi Semester 1</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="../refleksi/semester2.html" class="footer__nav-link">Refleksi Semester 2</a>
-                        </li>
-                        <li class="footer__nav-item">
-                            <a href="../refleksi/ppg.html" class="footer__nav-link">Refleksi PPG</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
             <div class="footer__bottom">
